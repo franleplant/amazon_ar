@@ -2,7 +2,8 @@ const trigger = document.querySelector('.search-trigger')
 const input = document.querySelector('.serve-favicon')
 const main = document.querySelector('main');
 
-trigger.addEventListener('click', _ => {
+trigger.addEventListener('click', e => {
+  e.preventDefault()
   main.innerHTML = "Loading..."
   search(trigger.value)
 });
@@ -22,8 +23,6 @@ function search(search_string) {
     })
 }
 
-
-//const data = window.__DATA;
 
 function render(tpl) {
   main.innerHTML = tpl;
