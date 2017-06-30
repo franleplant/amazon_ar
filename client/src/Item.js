@@ -10,7 +10,7 @@ export default function Item(d) {
     >
       <img src={d.img} width='70'/>
       <div style={{ marginLeft: '20px'}}>
-        <a href={d.link}>{d.title}</a>
+        <a href={d.link} target="_blank">{d.title}</a>
         <p>{d.price}</p>
       </div>
     </div>
