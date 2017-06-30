@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Panel } from 'react-bootstrap';
 import './App.css';
 import List from './List';
@@ -56,7 +56,11 @@ class App extends React.Component {
 
           return (
             <div>
-              <Tabs sources={this.state.data.map(({source}) => source)} onChange={this.handleSourceChange}/>
+              <Tabs
+                sources={this.state.data.map(({source}) => source)}
+                value={this.state.source}
+                onChange={this.handleSourceChange}
+              />
               <Panel style={{border: 0}}>
                 <ListMeta source={data.source}/>
                 <List source={data.source} data={data.data} />

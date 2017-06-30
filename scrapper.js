@@ -11,6 +11,15 @@ const SOURCES = [
       // sold by amazon                  // global shipping option
       rh: 'n:340831031,p_6:A3P5ROKL5A1OLE,p_n_shipping_option-bin:2023186031',
     })
+  },
+  {
+    key: 'ES',
+    base_url: `https://www.amazon.es/s`,
+    query: search => ({
+      keywords: search,
+      // sold by amazon                  // global shipping option
+      rh: 'n:3628728031,p_6:A1AT7YVPFBWXBL,p_n_shipping_option-bin:2019494031',
+    })
   }
 ];
 
